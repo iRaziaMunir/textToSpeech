@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Text To Speech</title>
+</head>
+<body>
+    <head>
+        <h1 class="preview">Preview</h1>
+    </head>
+    <main class="main-section">
+            <h3 class="text-to-speech">Text To Speech</h3>
+            <div class="txt-section">
+                <p class="enter-text-para">Enter Text</p>
+                <textarea name="text-to-speech" id="text"></textarea>
+            </div>
+           <div class="voice section">
+            <p class="select-voice-para">Select Voice</p>
+            <select name="select" id="voice-select">
+                <option value="Google US English">Google US English</option>
+                <option value="Google UK English">Google UK English</option>
+            </select>
+           </div>
+           <button class="submit">Pause Speech</button>
+           <p id="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, dolore.</p>
+    </main>
+    <script src="index.js"></script>
+
+
+
+
+    <script>
+        let a =5
+        let b=6
+        if (a>b) {
+
+            document.getElementById("paragraph").style.color="red";
+        }
+        else{
+            document.getElementById("paragraph").style.color="green";
+        }
+    </script>
+    
+</body>
+</html>

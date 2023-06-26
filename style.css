@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    background-color: rgb(244, 85, 5);
+}
+.preview
+{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-weight: 900;
+    text-transform: uppercase;
+}
+main.main-section
+{
+    width: 400px;
+    height: 500px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow:0px 0px 20px 5px rgb(37, 33, 33);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 10%;
+    right: 35%;
+}
+h3.text-to-speech
+{
+    font-size: 25px;
+}
+
+.txt-section
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+}
+p.enter-text-para
+{
+    font-weight: 900;
+    font-size: 20px;
+    align-self: flex-start;
+}
+#text
+{
+    height:5rem;
+    width: 15rem;
+    
+}
+p.select-voice-para
+{
+    font-weight: 900;
+    font-size: 20px; 
+}
+select#voice-select
+{
+    height:2rem;
+    width: 15rem;
+    
+}
+button.submit{
+    padding: 12px 80px;
+    background-color: rgb(221, 90, 14);
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+}
+button.submit:hover
+{
+    color: white;
+
+}

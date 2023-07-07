@@ -1,54 +1,19 @@
-let textarea = document.querySelector('#text')
-let voiceList = document.querySelector('#voice-select')
-let speechBtn = document.querySelector('.submit')
+let speech = new SpeechSynthesisUtterance();
+let voices =[];
+let voiceSelect = document.querySelector('select');
 
-let synth=speechSynthesis
-let isSpeaking = true;
-function voicespeech()
-{
-    for (let voice of synth.getVoices()){
-        let option = document.createElement('option')
-        option.text = voice.name
-        voiceList.add(option)
-        console.log(option)
-    }
-}
-synth.addEventListener('voiceschanged', voicespeech)
-function texttospeech(text){
-    let utterance = new SpeechSynthesisUtterance(text)
+window.speechSynthesis.onvoiceschanged =() =>{
+    voices = window.speechSynthesis.getVoices();
+    speech.voice = voices[0];
 
-    for(let voice of synth.getVoices()){
-        if (voice.name === voiceList.value){
-            utterance.voice = voice
-        }
-    }
-    speechSynthesis.speak(utterance)
-}
-speechBtn.addEventListener('click',(e)=>{
-    e.preventDefault()
-    if(textarea.value !== ' ' ){
-        if(!synth.speaking){
-            texttospeech(textarea.value)
-        }
-        if (textarea.value.length > 80) {
-            if (isSpeaking) {
-                synth.resume()
-                isSpeaking = false
-                speechBtn.innerHTML = ' pause speech'
-            }
-            else{
-                synth.pause()
-                isSpeaking = true
-                speechBtn.innerHTML = 'Resume speech'
-            }
-            setInterval(() => {
-                if (!synth.speaking && isSpeaking ) {
-                    isSpeaking = true
-                    speechBtn.innerHTML = ' convert to speech' 
-                }
-            })
-        }else{
-            speechBtn.innerHTML = ' convert to speech'
-        }
-    }
-})
+    voices.forEach((voice , i)=>(voiceSelect.options[i] = new Option(voice.name, i)));
+};
+
+voiceSelect.addEventListener("change", () =>{
+    speech.voice = voices[voiceSelect.value];
+});
+
+document.querySelector("button").addEventListener("click" , () =>{
+    speech.text = document.querySelector("textarea").value;
+    window.speechSynthesis.speak(speech);
+});

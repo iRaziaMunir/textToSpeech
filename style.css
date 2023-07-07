@@ -1,25 +1,19 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 body
 {
     background-color: rgb(244, 85, 5);
 }
-.preview
-{
-    text-align: center;
-    color: rgb(255, 255, 255);
-    font-weight: 900;
-    text-transform: uppercase;
-}
-main.main-section
+
+main
 {
     width: 400px;
     height: 500px;
-    background-color: white;
     border-radius: 10px;
-    box-shadow:0px 0px 20px 5px rgb(37, 33, 33);
+    box-shadow:0px 0px 20px 15px rgb(31, 30, 30);
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -30,7 +24,8 @@ main.main-section
 }
 h3.text-to-speech
 {
-    font-size: 25px;
+    font-size:10rem;
+    color: red;
 }
 
 .txt-section

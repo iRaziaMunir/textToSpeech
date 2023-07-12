@@ -51,9 +51,7 @@ textarea{
     padding: 10%;
     border: none;
     border-radius: 10px;
-    box-shadow:2px 5px 5px 2px rgb(82, 80, 80);
-
-
+    box-shadow:2px 5px 10px 5px rgb(82, 80, 80);
 }
 #text
 {

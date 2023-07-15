@@ -103,7 +103,7 @@ button:active
     {
       width: 80vw;
       height: 80vh;
-      background-color: aqua;
+      background-color: rgb(192, 241, 241);
       padding: 10px;
     }
     h1{

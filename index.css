@@ -70,10 +70,10 @@ select#voice-select
     box-shadow:2px 5px 5px 2px rgb(82, 80, 80);
     border: none;
     border-radius: 10px;
-    padding: 20px 10px;
+    padding: 25px 30px;
 }
 button{
-    padding: 18px 25px;
+    padding: 18px 130px;
     background-color: rgba(255, 124, 1, 0.87);
     box-shadow:2px 5px 5px 2px rgb(92, 89, 89);
     font-size: 20px;

@@ -20,9 +20,6 @@ main.main-section
     justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
-    /* position: absolute;
-    top: 10%;
-    right: 35%; */
 }
 h1.text-to-speech
 {
@@ -56,7 +53,7 @@ textarea{
 #text
 {
     height:5rem;
-    width: 15rem;
+    width: 20rem;
     
 }
 p.select-voice-para
@@ -67,8 +64,7 @@ p.select-voice-para
 }
 select#voice-select
 {
-    height:2rem;
-    width: 15rem;
+    width: 20rem;
     cursor: pointer;
     background-color: rgba(252, 244, 244, 0.959);
     box-shadow:2px 5px 5px 2px rgb(82, 80, 80);
@@ -77,7 +73,7 @@ select#voice-select
     padding: 20px 10px;
 }
 button{
-    padding: 12px 80px;
+    padding: 18px 25px;
     background-color: rgba(255, 124, 1, 0.87);
     box-shadow:2px 5px 5px 2px rgb(92, 89, 89);
     font-size: 20px;

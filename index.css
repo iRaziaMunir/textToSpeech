@@ -24,6 +24,7 @@ main.main-section
 h1.text-to-speech
 {
     font-size:30px;
+    margin-top: 5px;
 }
 span{
     color: orange;
@@ -98,14 +99,30 @@ button:active
     main.main-section
     {
       width: 80vw;
-      height: 80vh;
+      height: 100vh;
       background-color: rgb(192, 241, 241);
-      padding: 10px;
+      padding: 20px 10px;
+      
     }
     h1{
         text-align: center;
+        margin-top: 20px;
     }
     button{
         margin-block: 10px;
+        padding: 18px 90px;
     }
+    #text{
+        gap:10px;
+        height:5rem;
+        width: 15rem;
+    }
+    p.select-voice-para{
+        margin-block: 15px;
+    }
+    select#voice-select{
+        width: 15rem;
+        margin-block: 10px;
+    }
+
   }

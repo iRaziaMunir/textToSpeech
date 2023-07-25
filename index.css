@@ -4,33 +4,30 @@
 }
 body
 {
-    background-color: rgb(244, 85, 5);
-}
-.preview
-{
-    text-align: center;
-    color: rgb(255, 255, 255);
-    font-weight: 900;
-    text-transform: uppercase;
+    background-color:rgb(192, 241, 241);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 main.main-section
 {
     width: 400px;
     height: 500px;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.959);
     border-radius: 10px;
     box-shadow:0px 0px 20px 5px rgb(37, 33, 33);
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
-    position: absolute;
-    top: 10%;
-    right: 35%;
 }
-h3.text-to-speech
+h1.text-to-speech
 {
-    font-size: 25px;
+    font-size:30px;
+    margin-top: 5px;
+}
+span{
+    color: orange;
 }
 
 .txt-section
@@ -39,7 +36,7 @@ h3.text-to-speech
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 5px;
+    gap: 15px;
 }
 p.enter-text-para
 {
@@ -47,32 +44,85 @@ p.enter-text-para
     font-size: 20px;
     align-self: flex-start;
 }
+textarea{
+    background-color: rgba(252, 244, 244, 0.959);
+    padding: 10%;
+    border: none;
+    border-radius: 10px;
+    box-shadow:2px 5px 10px 1px rgb(82, 80, 80);
+}
 #text
 {
     height:5rem;
-    width: 15rem;
+    width: 20rem;
     
 }
 p.select-voice-para
 {
     font-weight: 900;
     font-size: 20px; 
+    margin-bottom: 10px;
 }
 select#voice-select
 {
-    height:2rem;
-    width: 15rem;
-    
+    width: 20rem;
+    cursor: pointer;
+    background-color: rgba(252, 244, 244, 0.959);
+    box-shadow:2px 5px 5px 2px rgb(82, 80, 80);
+    border: none;
+    border-radius: 10px;
+    padding: 25px 30px;
 }
-button.submit{
-    padding: 12px 80px;
-    background-color: rgb(221, 90, 14);
+button{
+    padding: 18px 130px;
+    background-color: rgba(255, 124, 1, 0.87);
+    box-shadow:2px 5px 5px 2px rgb(92, 89, 89);
     font-size: 20px;
+    font-weight: 600;
     border: none;
     border-radius: 5px;
-}
-button.submit:hover
-{
+    cursor: pointer;
     color: white;
-
 }
+button:hover
+{
+    background-color: rgb(194, 191, 14);
+}
+button:active
+{
+    background-color: black;
+}
+@media (max-width: 767px) {
+    body{
+        background-color: transparent;
+    }
+    main.main-section
+    {
+      width: 80vw;
+      height: 100vh;
+      background-color: rgb(192, 241, 241);
+      padding: 20px 10px;
+      
+    }
+    h1{
+        text-align: center;
+        margin-top: 20px;
+    }
+    button{
+        margin-block: 10px;
+        padding: 18px 90px;
+    }
+    #text{
+        gap:10px;
+        height:5rem;
+        width: 15rem;
+    }
+    p.select-voice-para{
+        margin-block: 15px;
+    }
+    select#voice-select{
+        width: 15rem;
+        margin-block: 10px;
+    }
+
+  }
